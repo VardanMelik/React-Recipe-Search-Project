@@ -1,19 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Recipe from './components/Recipe'
-import RecipeDetails from './components/RecipeDetails'
+import {recipes} from './recipes/tempList'
 import RecipeList from './components/RecipeList'
+import RecipeDetails from './components/RecipeDetails'
+
+
+import Recipe from './components/Recipe'
+
+import RecipeSearch from './components/RecipeSearch'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Recipe />
-        <RecipeDetails />
-        <RecipeList/>
-      </header>
-    </div>
+    <React.Fragment>
+      <RecipeList />
+      <RecipeDetails />
+    </React.Fragment>
   );
 }
 

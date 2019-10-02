@@ -4,7 +4,7 @@ export default class RecipeList extends Component {
   render() {
     return (
       <React.Fragment>
-        Hello From Recipe List
+        <h1>Hello From Recipe List</h1>
       </React.Fragment>
     )
   }
