@@ -9,7 +9,8 @@ class App extends Component {
 
   state = {
     recipes: recipes,
-    url: "https://www.f0ood2fork.com/api/search?key=d012ccc20ad1e794fee4460740f8bc75"
+    url: "https://www.food2fork.com/api/search?key=d012ccc20ad1e794fee4460740f8bc75",
+    details_id: 35384
   };
 //  Async Function
 /*async getRecipes() {
@@ -28,15 +29,13 @@ componentDidMount() {
   this.getRecipes()
 }*/
 
-
-
 render () {
   //console.log(this.state.recipes);
 
   return (
     <React.Fragment>
-      <RecipeList recipes={this.state.recipes} />
-      <RecipeDetails />
+      { /*<RecipeList recipes={this.state.recipes} /> */ }
+      <RecipeDetails id={this.state.details_id} />
     </React.Fragment>
   );
 }
