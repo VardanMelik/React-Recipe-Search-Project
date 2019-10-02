@@ -13,6 +13,9 @@ https://fonts.google.com
 4. Food2Fork API 
 https://www.food2fork.com/api
 
+5. Hosting
+www.netlify.com
+
 
 font-family: 'Open Sans', sans-serif;
 font-family: 'Courgette', cursive;
