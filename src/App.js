@@ -5,14 +5,14 @@ import RecipeList from './components/RecipeList'
 import RecipeDetails from './components/RecipeDetails'
 
 
-class App extends React.Component {
+class App extends Component {
 
   state = {
-    recipes: [],
-    url: "https://www.food2fork.com/api/search?key=d012ccc20ad1e794fee4460740f8bc75"
+    recipes: recipes,
+    url: "https://www.f0ood2fork.com/api/search?key=d012ccc20ad1e794fee4460740f8bc75"
   };
 //  Async Function
-async getRecipes() {
+/*async getRecipes() {
   try {
     const data = await fetch(this.state.url)
     const jsonData = await data.json()
@@ -22,18 +22,20 @@ async getRecipes() {
   }catch(error){ console.log(error)}
 
 };
+
+// componentDidMount
 componentDidMount() {
   this.getRecipes()
-}
+}*/
 
 
 
 render () {
-  console.log(this.state.recipes);
+  //console.log(this.state.recipes);
 
   return (
     <React.Fragment>
-      <RecipeList />
+      <RecipeList recipes={this.state.recipes} />
       <RecipeDetails />
     </React.Fragment>
   );
