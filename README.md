@@ -1,9 +1,17 @@
 # React-Recipe-Search-Project
 React Recipe Search Project
 
-1. https://fontawesome.com
-2. https://getbootstrap.com/
-3. https://fonts.google.com
+1. Font Awesome
+https://fontawesome.com
+
+2. GetBootstrap
+https://getbootstrap.com/
+
+3. Google Fonts 
+https://fonts.google.com
+
+4. Food2Fork API 
+https://www.food2fork.com/api
 
 
 font-family: 'Open Sans', sans-serif;
